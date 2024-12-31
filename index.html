@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keg</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <div class="dashboard">
+
+        <!-- sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="https://via.placeholder.com/40" alt="Logo" class="logo"> <!-- TODO: logo -->
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="sidebar-link">
+                        <a href="#" class="nav-link active" id="sidebarLinkSearch">
+                            <i class='bx bx-search'></i>
+                            <span>Search</span>
+                        </a>
+                    </li>
+                    <li class="has-submenu sidebar-link">
+                        <a href="#" class="nav-link" data-submenu="works" id="sidebarLinkWorks">
+                            <i class='bx bx-wrench'></i>
+                            <span>Works</span>
+                            <span class="count">12</span>
+                            <i class='bx bx-chevron-down submenu-arrow'></i>
+                        </a>
+                        <ul class="submenu" id="works-submenu">
+                            <li>
+                                <a href="#" class="nav-link" id="submenuWorkInProgress">
+                                    <span>Work in progress</span>
+                                    <span class="count">4</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link" id="submenuScheduled">
+                                    <span>Scheduled</span>
+                                    <span class="count">8</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-link">
+                        <a href="#" class="nav-link" id="sidebarLinkFavorites">
+                            <i class='bx bx-star'></i>
+                            <span>Favorites</span>
+                        </a>
+                    </li>
+                    <li class="has-submenu sidebar-link">
+                        <a href="#" class="nav-link" data-submenu="profile" id="sidebarLinkProfile">
+                            <i class='bx bx-user'></i>
+                            <span>Profile</span>
+                            <i class='bx bx-chevron-down submenu-arrow'></i>
+                        </a>
+                        <ul class="submenu" id="profile-submenu">
+                            <li><a href="#" class="nav-link" id="submenuPersonalInformation">Personal information</a></li>
+                            <li><a href="#" class="nav-link" id="submenuWorksHistory">Works history</a></li>
+                            <li><a href="#" class="nav-link" id="submenuSettings">Settings</a></li>
+                            <li><a href="#" class="nav-link" id="submenuMessages">Messages</a></li>
+                            <li><a href="#" class="nav-link" id="submenuReferFriend">Refer a friend</a></li>
+                            <li><a href="#" class="nav-link" id="submenuWallet">Wallet</a></li>
+                            <li><a href="#" class="nav-link" id="submenuHelp">Help</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <button class="theme-toggle light-mode active">
+                    <i class='bx bx-sun'></i>
+                    <span>Light</span>
+                </button>
+                <button class="theme-toggle dark-mode">
+                    <i class='bx bx-moon'></i>
+                    <span>Dark</span>
+                </button>
+            </div>
+            <button id="sidebar-close" aria-label="Close Sidebar">
+                <i class='bx bx-chevron-left'></i>
+            </button>
+        </aside>
+
+        <div class="floating-submenu"></div>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="user-profile">
+                    <div class="user-info">
+                        <h2 class="user-name">John Doe</h2>
+                        <p class="user-email">john.doe@example.com</p>
+                    </div>
+                    <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+                </div>
+            </header>
+            <div class="content-area">
+                <h1>search component</h1>
+            </div>
+        </main>
+
+    </div>
+
+    <script type="module" src="./js/sidebar.js"></script>
+    <script type="module" src="./js/render.js"></script>
+
+</body>
+</html>
