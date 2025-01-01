@@ -50,21 +50,21 @@ const reloadProfileSubmenuLinks = () => {
 const resetActiveFloat = ( option ) => {
 
     if ( option == 'works' ) {
-        const workInProgress = document.querySelectorAll( '#submenuWorkInProgress' )[ 1 ];
-        const scheduled = document.querySelectorAll( '#submenuScheduled' )[ 1 ];
+        const workInProgress = [ ...document.querySelectorAll( '#submenuWorkInProgress' ) ].at( -1 );
+        const scheduled = [ ...document.querySelectorAll( '#submenuScheduled' ) ].at( -1 );
         workInProgress.addEventListener( 'click', () => setupForWorkInProgress() );
         scheduled.addEventListener( 'click', () => setupForScheduled() );
     };
 
     if ( option == 'profile' ) {
 
-        const personalInformation = document.querySelectorAll( '#submenuPersonalInformation' )[ 1 ];
-        const worksHistory = document.querySelectorAll( '#submenuWorksHistory' )[ 1 ];
-        const settings = document.querySelectorAll( '#submenuSettings' )[ 1 ];
-        const messages = document.querySelectorAll( '#submenuMessages' )[ 1 ];
-        const referFriend = document.querySelectorAll( '#submenuReferFriend' )[ 1 ];
-        const wallet = document.querySelectorAll( '#submenuWallet' )[ 1 ];
-        const help = document.querySelectorAll( '#submenuHelp' )[ 1 ];
+        const personalInformation = [ ...document.querySelectorAll( '#submenuPersonalInformation' ) ].at( -1 );
+        const worksHistory = [ ...document.querySelectorAll( '#submenuWorksHistory' ) ].at( -1 );
+        const settings = [ ...document.querySelectorAll( '#submenuSettings' ) ].at( -1 );
+        const messages = [ ...document.querySelectorAll( '#submenuMessages' ) ].at( -1 );
+        const referFriend = [ ...document.querySelectorAll( '#submenuReferFriend' ) ].at( -1 );
+        const wallet = [ ...document.querySelectorAll( '#submenuWallet' ) ].at( -1 );
+        const help = [ ...document.querySelectorAll( '#submenuHelp' ) ].at( -1 );
         personalInformation.addEventListener( 'click', () => setupPersonalInformation() );
         worksHistory.addEventListener( 'click', () => setupWorksHistory() );
         settings.addEventListener( 'click', () => setupSettings() );
@@ -81,11 +81,11 @@ const resetActiveFloat = ( option ) => {
 submenuToggles.forEach( sidebarLink => {
 
     sidebarLink.addEventListener( 'click', () => {
-        if ( sidebar.classList.contains( 'closed' ) ) {
-            if ( floatingSubmenu.classList.contains( 'works' ) ) {
+        if ( sidebar.classList.contains( 'closed' ) || window.innerWidth <= 768 ) {
+            if ( floatingSubmenu.classList.contains( 'works' ) || window.innerWidth <= 768 ) {
                 resetActiveFloat( 'works' );
             };
-            if ( floatingSubmenu.classList.contains( 'profile' ) ) {
+            if ( floatingSubmenu.classList.contains( 'profile' ) || window.innerWidth <= 768 ) {
                 resetActiveFloat( 'profile' );
             };
         }

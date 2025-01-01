@@ -52,8 +52,7 @@ submenuToggles.forEach(toggle => {
         const arrow = this.querySelector('.submenu-arrow');
         if (window.innerWidth <= 768) {
             closeAllSubmenus();
-            if (floatingSubmenu.classList.contains('active') && 
-                floatingSubmenu.querySelector(`#${submenuId}-submenu`)) {
+            if (floatingSubmenu.classList.contains('active') &&  floatingSubmenu.querySelector(`#${submenuId}-submenu`)) {
                 closeFloatingSubmenu();
             } else {
                 const submenuTitle = this.querySelector('span').textContent;
