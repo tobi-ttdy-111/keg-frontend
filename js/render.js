@@ -131,7 +131,7 @@ const setupForSearch = () => {
     sidebarLinkSearch.classList.add( 'active' );
     closeFloatingSubmenu();
 
-};
+}; setupForSearch();
 
 
 // setupForFavorites

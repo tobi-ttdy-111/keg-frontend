@@ -1,0 +1,796 @@
+{
+    "Philips": [ 
+        {
+            "CT": [
+                "Brilliance 16",
+                "Brilliance 40",
+                "Brilliance 64",
+                "Brilliance 16 Mobile",
+                "Brilliance 40 Mobile",
+                "Brilliance 64 Mobile",
+                "Gemini 16 PET-CT",
+                "Gemini 40 PET-CT",
+                "Gemini 64 PET-CT",
+                "Brilliance Big Bore Oncology",
+                "Ingenuity 128",
+                "MX800 IDT 16",
+                "Ingenuity Flex 32",
+                "Ingenuity Core 64",
+                "CT 5300",
+                "Spectral CT 7500",
+                "Big Bore RT",
+                "5100 Incisive",
+                "Brilliance iCT 256"
+            ]
+        },
+        {
+            "Digital Radiography": [
+                "DigitalDiagnost",
+                "7300 C",
+                "7000C DigitalDiagnost C90",
+                "DigitalDiagnost Rel. 4.3",
+                "5000C DigitalDiagnost C50",
+                "5000F DuraDiagnost Rel 4",
+                "7000 R",
+                "DuraDiagnost",
+                "Bucky Diagnost FS",
+                "Bucky Diagnost CS"
+            ]
+        },
+        {
+            "Mobil Radiography": [
+                "7000 M",
+                "5700M Mobil Diagnost wDR",
+                "Mobil Diagnost M50"
+            ]
+        },
+        {
+            "Fluroscopy": [
+                "CombiDiagnost R90",
+                "ProxyDiagnost N90",
+                "7000 N",
+                "7000 R",
+                "Libra C-Arm",
+                "Veradius C-Arm",
+                "Veradius NEO C-arm",
+                "BV Endura C-Arm",
+                "BV Pulsera C-Arm",
+                "BV 26 C-Arm"
+            ]
+        },
+        {
+            "MRI": [
+                "Achieva 1.5T",
+                "Achieva XR 1.5T",
+                "Achieva A-Series 1.5T",
+                "Achieva SE 1.5T",
+                "Intera Master 1.5T",
+                "Intera Power 1.5T",
+                "Ingenia 1.5T",
+                "Ingenia Prodiva 1.5T",
+                "Ingenia Ambition 1.5T",
+                "Ingenia Evolution 1.5T",
+                "Multiva 1.5T",
+                "Achieva TX 3T",
+                "Achieva X 3T",
+                "Achieva XR 3T",
+                "Intera 3T",
+                "Ingenia 3T",
+                "Ingenia Elition 3T",
+                "Ingenia Evolution 3T",
+                "Panorama HFO",
+                "MR 7700 3T",
+                "BlueSeal Mobile 1.5T",
+                "Ingenia MR-RT"
+            ]
+        },
+        {
+            "Nuc Med": [
+                "Gemini TF 16",
+                "Gemini TF Big Bore 16",
+                "Gemini LXL 16",
+                "Gemini GXL 16",
+                "Ingenuity TF 64",
+                "Ingenuity Core 128",
+                "Vereos 128",
+                "Ingenuity TF Elite 128"
+            ]
+        },
+        {
+            "Cath Labs": [
+                "Azurion 3",
+                "Azurion 5",
+                "Azurion 7",
+                "Azurion 7 C20 & F20",
+                "Azurion 7 B12",
+                "Azurion 7 B20",
+                "Allura Xper FD10",
+                "Allura Xper FD Circular Edition",
+                "Integris 5000"
+            ]
+        },
+        {
+            "Mammo": [
+                "Sectra Microdose L30",
+                "Microdose L50",
+                "MammoDiagnost DR",
+                "Microdose SI",
+                "MammoDiagnost 4000",
+                "Sectra MDM D40"
+            ]
+        },
+        {
+            "Ultrasound": [
+                "EPIQ Elite",
+                "EPIQ CVx",
+                "Affiniti 30",
+                "Affiniti 70",
+                "Affiniti 50",
+                "Sonos 5500",
+                "EPIQ CVxi",
+                "Affiniti CVx",
+                "5500CV",
+                "Lumify",
+                "iE33 E Cart",
+                "iU22A",
+                "EPIQ 7",
+                "Epic 5G",
+                "HD11",
+                "HDI 5000",
+                "CX50 Portable",
+                "Sparq",
+                "HD7",
+                "ClearVue 550",
+                "ClearVue 850",
+                "VISIQ",
+                "Envisor HD"
+            ]
+        }
+    ],
+
+    "Siemens": [
+        {
+            "CT": [
+                "Emotion 16",
+                "Scope 16",
+                "Sensation 16",
+                "Definition",
+                "Perspective 32",
+                "Definition AS 64",
+                "Perspective 64",
+                "Sensation Cardiac 64",
+                "Definition AS 128",
+                "Definition AS Plus 128",
+                "Definition Dual-Source 128",
+                "Edge 128",
+                "Perspective 128",
+                "Definition DS 256",
+                "Definition Flash 256",
+                "Sensation Oncology",
+                "Naeotom Alpha",
+                "Force",
+                "Drive",
+                "Pro.Pulse",
+                "X.Platform",
+                "go.Platform",
+                "On.Site"
+            ]
+        },
+        {
+            "Digital Radiography": [
+                "YSIO X.Pree",
+                "Multix Impact C",
+                "Multix Impact",
+                "Sharp FM",
+                "Sharp Vet"
+            ]
+        },
+        {
+            "Mobil Radiography": [
+                "Monilett Elara Max",
+                "Mobilett Plus",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        {
+            "Fluroscopy": [
+                "Orbic",
+                "Avantic",
+                "Varic",
+                "Luminos Digital RF",
+                "Luminos Lotus",
+                "Luminos Agile Max",
+                "Smart C",
+                "Ciartic Move",
+                "Cios Spin",
+                "Cios Alpha",
+                "Cios Flow",
+                "Cios Select with FD"
+            ]
+        },
+        {
+            "MRI": [
+                "Aera 1.5T",
+                "Avanto 1.5T",
+                "Avanto Fit 1.5T",
+                "Espree 1.5T",
+                "Essenza 1.5T",
+                "Sonata 1.5T",
+                "Symphony Quantum 1.5T",
+                "Symphony Sprint 1.5T",
+                "Sola 1.5T",
+                "Altea 1.5T",
+                "Amira 1.5T",
+                "Free.Star 1.5T",
+                "Trio 3T",
+                "Verio 3T",
+                "Skyra 3T",
+                "Prisma 3T",
+                "Prisma Fit 3T",
+                "Spectra 3T",
+                "Vida 3T",
+                "Lumina 3T",
+                "Magnetom C",
+                "Mobile MRI"
+            ]
+        },
+        {
+            "Nuc Med": [
+                "Biograph 16",
+                "Biograph TruePoint 16",
+                "Biograph Horizon 16",
+                "Biograph TruePoint 64",
+                "Biograph mCT 64",
+                "Biograph mCT Flow 64",
+                "Biograph Vision 64",
+                "Biograph Vision Quadra 64",
+                "Biograph Trinion",
+                "Symbia S",
+                "Symbia Intevo Bold",
+                "Symbia E"
+            ]
+        },
+        {
+            "Cath Labs": [
+                "Artis Zee Biplane",
+                "Artis Zee Ceiling",
+                "Artis Zee Floor",
+                "Artis Zee Multi-purpose",
+                "Artis Q",
+                "Artis Icono",
+                "Artis Pheno",
+                "Artis Q.zen",
+                "Artis One",
+                "Nexaris Angio-MR-CT",
+                "Nexaris Angio-CT"
+            ]
+        },
+        {
+            "Mammo": [
+                "Revelation",
+                "B.brilliant",
+                "Revelation with 50 Wide angle",
+                "50 Wide Angle Biopsy"
+            ]
+        },
+        {
+            "Ultrasound": [
+                "Acuson Maple",
+                "Acuson Origin",
+                "Acuson Sequoia",
+                "Acuson Redwood",
+                "Acuson Juniper",
+                "Acuson NX3",
+                "Acuson NX2",
+                "Acuson Freestyle",
+                "AcusonSC2000 Prime",
+                "Acuson Redwood CV Edition",
+                "Acuson Juniper CV Edition",
+                "Acuson P500",
+                "Acuson Bonsai",
+                "Acuson Aspen",
+                "Acuson 128 XP",
+                "Acuson SC 2000",
+                "cuson S2000",
+                "Acuson S2000 HELX Touch",
+                "Acuson S3000 HELX",
+                "Acuson X700"
+            ]
+        }
+    ],
+
+    "GE": [
+        {
+            "CT": [
+                "BrightSpeed Elite 16",
+                "BrightSpeed Elite Select 16",
+                "LightSpeed 16",
+                "LightSpeed PRO 16",
+                "Optima RT",
+                "Optima CT-540 16",
+                "Optima CT-580 w 16",
+                "LightSpeed PRO 32",
+                "Discovery CT-750 64",
+                "LightSpeed VCT 64",
+                "Optima CT-660 64",
+                "Revolution Apex",
+                "Revolution HD 64",
+                "Revolution EVO 128",
+                "Optima CT-660 W 128",
+                "LightSpeed RT Oncology",
+                "Revolution Frontier Gen3",
+                "Revolution Ascend",
+                "Revolution Maxima",
+                "Discovery RT Gen 3"
+            ]
+        },
+        {
+            "Digital Radiography": [
+                "Definium XR656",
+                "AMX Navigate",
+                "Definium 656 HD",
+                "Definium Tempo",
+                "Defninium 646 HD",
+                "Definium XR-F"
+            ]
+        },
+        {
+            "Mobil Radiography": [
+                "AMX 4+",
+                "Definium AMX 700",
+                "Optima XR220",
+                "AMX Navigate"
+            ]
+        },
+        {
+            "Fluroscopy": [
+                "OEC 9600",
+                "OEC 9800",
+                "OEC 9800 Digital Panel",
+                "OEC 9800 Display Upgrade",
+                "OEC 9900 Elite",
+                "OEC MiniView",
+                "OEC 3D",
+                "OEC Elite CFD",
+                "OEC One CFD",
+                "Precision 180",
+                "Precision CRF",
+                "Uroview 8K"
+            ]
+        },
+        {
+            "MRI": [
+                "Brivo MR-355 1.5T",
+                "Discovery MR-450 1.5T",
+                "Optima MR-360 1.5T",
+                "Optima MR-450w GEM 1.5T",
+                "Signa EchoSpeed Excite 1.5T",
+                "Signa EchoSpeed Plus 1.5T",
+                "Signa HD 1.5T",
+                "Signa HDe 1.5T",
+                "Signa HDi 1.5T",
+                "Signa HDx 1.5T",
+                "Signa HDxt 1.5T",
+                "Signa Infinity 1.5T",
+                "Signa Explorer 1.5T",
+                "Signa Creator 1.5T",
+                "Signa Pioneer 1.5T",
+                "Signa Architect 1.5T",
+                "Signa Artist 1.5T",
+                "Signa Premier 1.5T",
+                "Signa Voyager 1.5T",
+                "Signa Prime 1.5T",
+                "Discovery MR-750w 3T",
+                "Discovery MR-750w GEM 3T",
+                "Signa HDx 3T",
+                "Signa HDxT 3T",
+                "Signa Architect 3T",
+                "Signa Excite 3T",
+                "Signa Pioneer 3T",
+                "Signa Premier 3T",
+                "Signa Ovation",
+                "Signa Premier XT",
+                "Sonic DL",
+                "Air Recon DL",
+                "Signa Evo",
+                "Signa Champion",
+                "Signa Victor"
+            ]
+        },
+        {
+            "Nuc Med": [
+                "Discovery ST 16",
+                "Dicovery STE 16",
+                "Discovery 600 16",
+                "Discovery RX 16",
+                "Optima 560 16",
+                "Discovery IQ",
+                "Discovery IQ Gen 2 16",
+                "Discovery MI 16",
+                "Discovery STE 64",
+                "Discovery VCT 64",
+                "LightSpeed VCT 64",
+                "Discovery 710 64",
+                "Discovery IQ Gen 2 128",
+                "Discovery MI 128",
+                "Discovery NM-CT 850",
+                "Discovery NM-CT 670",
+                "Discovery NM630",
+                "Discovery NM 530",
+                "Discovery MI Gen2",
+                "Omni Legend",
+                "Discovery MI DR",
+                "StarGuide",
+                "MyoSPECT",
+                "NM-CT 870 CZT",
+                "NM-CT 870 DR",
+                "Discovery NM-CT 860",
+                "NM 830",
+                "Cyclotrons"
+            ]
+        },
+        {
+            "Cath Labs": [
+                "Allia IGS 3",
+                "Allia IGS 5",
+                "Allia IGS 6",
+                "Allia IGS 7",
+                "Allia IGS Pulse"
+            ]
+        },
+        {
+            "Mammo": [
+                "Senographe Pristina",
+                "Pristina Serena",
+                "Serena Bright",
+                "Pristina Bright"
+            ]
+        },
+        {
+            "Ultrasound": [
+                "Voluson E8 Expert",
+                "Logic E9",
+                "Logic F8",
+                "Logic P5",
+                "Logic P6",
+                "Logic P9",
+                "Logic S6",
+                "Logic S7 Expert",
+                "Logic S8",
+                "Logic V5",
+                "Logic E10",
+                "Logic E10s",
+                "Venue Go",
+                "Vivid 3",
+                "Vivid 7",
+                "Vivid E9",
+                "Vivid E95",
+                "Vivid E Series",
+                "Vivid S Series",
+                "Vivid T Series",
+                "Vivid iq",
+                "EchoPAC",
+                "Vivid S5",
+                "Vivid S70",
+                "Vivid T8",
+                "Voluson 730 Expert 4D",
+                "Voluson E10",
+                "Voluson Expert E6",
+                "Voluson Expert E8",
+                "Voluson P8 BT 16",
+                "Voluson Expert 22",
+                "Voluson Expert 20",
+                "Voluson Expert 18",
+                "Logic Fortis",
+                "Logic Totus",
+                "Logic P10 XDClear",
+                "Logic P9  XDClear",
+                "Versana Premier",
+                "Versana Balance",
+                "Versana Essential",
+                "Versana Active",
+                "Invenia ANBUS 2.0",
+                "bkSpecto",
+                "bk3000",
+                "bk5000"
+            ]
+        },
+        {
+            "Bone Density": [
+                "Lunar iDXA",
+                "Lunar Prodigy"
+            ]
+        }
+    ],
+
+
+    "Samsung": [
+        {
+            "CT": [
+                "OmniTom Elite",
+                "BodyTom",
+                "CereTom"
+            ]
+        },
+        {
+            "Digital Radiography": [
+                "AccE GC85A Vision+",
+                "AccE GM85",
+                "GM85 Fit"
+            ]
+        },
+        {
+            "Ultrasound": [
+                "HS50",
+                "Medison SonoAce R7",
+                "WS80A",
+                "WS80A Elite",
+                "HERA W10 Elite",
+                "HERA W10",
+                "HERA I10",
+                "RS85 Prestige",
+                "RS80 Evo",
+                "V8",
+                "V7",
+                "HERA W9",
+                "V6",
+                "HS60",
+                "HS40",
+                "HM70 Evo",
+                "HS 30"
+            ]
+        }
+    ],
+
+    "Hologic": [
+        {
+            "Mammo": [
+                "3Dimensions",
+                "Selenia Dimensions",
+                "Selenia",
+                "3DQuorum",
+                "Affirm UpRight",
+                "SecureView",
+                "Affirm Lateral",
+                "Affirm Prone",
+                "ATEC",
+                "Brevera"
+            ]
+        },
+        {
+            "Bone Density": [
+                "Horizon Wi",
+                "Discovery",
+                "Fluoroscan InSight FD",
+                "Horizon DXA",
+                "Discovery W",
+                "Discovery Wi",
+                "Discovery SL",
+                "Discovery Ci",
+                "Discover C",
+                "Explorer"
+            ]
+        }
+    ],
+
+    "Canon": [
+        {
+            "CT": [
+                "Aquiillion 16",
+                "Aquiillion 32",
+                "Aquiillion 64",
+                "Aquiillion ONE Family",
+                "Aquiillion Lightning 16",
+                "Aquiillion LB",
+                "Aquilion ONE-INSIGHT Edition",
+                "Aquilion ONE-PRISM Edition",
+                "Aquilion ONE-GENESIS Edition",
+                "Aquilion Precision",
+                "Aquilion Serve SP",
+                "Aquilion Prime SP",
+                "Aquilion Lightning 80 Ultra Helical",
+                "Aquilion Exceed LB"
+            ]
+        },
+        {
+            "Digital Radiography": [
+                "OMNERA® 500A",
+                "OMNERA® 400T",
+                "URS",
+                "FM—Floor Mounted"
+            ]
+        },
+        {
+            "Mobil Radiography": [
+                "Mobirex i9",
+                "SOLTUS® 500"
+            ]
+        },
+        {
+            "Fluroscopy": [
+                "Ultimax-i FPD",
+                "Kalare"
+            ]
+        },
+        {
+            "MRI": [
+                "Fortian 1.5T",
+                "Vantage Galan 3T",
+                "Vantage Orian 1.5T",
+                "Vantage Elan",
+                "Vantage Orian-Encore Upgrade",
+                "EXCELART Vantage 1.5T",
+                "EXCELART Vantage Powered by Atlas",
+                "Vantage Titan 1st Generation",
+                "Vantage Titan 2a, 3ª Generation"
+            ]
+        },
+        {
+            "Nuc Med": [
+                "Cartesion Prime",
+                "Celesteion PUREViSION Edition",
+                "Celestion"
+            ]
+        },
+        {
+            "Cath Labs": [
+                "Alphenix Core+",
+                "Alphenix Sky",
+                "Alphenix Biplane",
+                "Alphenix Dual Plane",
+                "Alphenix 4D CT",
+                "Alphenix Sky+",
+                "Alphenix Hybrid+"
+            ]
+        },
+        {
+            "Ultrasound": [
+                "Aplio a-series",
+                "Aplio flex",
+                "Aplio 400",
+                "Aplio 500",
+                "Aplio i800",
+                "Xario XG",
+                "Aplio A450"
+            ]
+        }
+    ],
+
+    "Hitachi": [
+        {
+            "CT": [
+                "Scenaria 64",
+                "ECLOS 4",
+                "ECLOS 16",
+                "Scenaria 128",
+                "Supria 64",
+                "Supria 32",
+                "Pronto SE 1",
+                "Robusto Ei 4",
+                "Presto",
+                "Scenario 64",
+                "LCT 200",
+                "Eclos 8",
+                "CXR 4"
+            ]
+        },
+        {
+            "Digital Radiography": [
+                "CLINIX III",
+                "Radnex 32",
+                "DIAVISTA",
+                "FHF-155HIII",
+                "DHF-122HII",
+                "Radnext 50"
+            ]
+        },
+        {
+            "Mobil Radiography": [
+                "Sirius Start Mobile",
+                "Sirius Start Mobile Tiara",
+                "Sirius 80N",
+                "Sirius 12HP",
+                "Siriux 125MX"
+            ]
+        },
+        {
+            "Fluroscopy": [
+                "CUREVISTA",
+                "EXAVISTA",
+                "DHF-105CX",
+                "DHF-105CX-PC"
+            ]
+        },
+        {
+            "MRI": [
+                "Airis Elite",
+                "Airis II",
+                "Airis II 0.3T",
+                "Aperto Lucent 0.4T",
+                "Airis Vento 0.3T",
+                "Aperto Eterna 0.4T",
+                "Aperto Inspire 0.4T",
+                "Airis Vento LT 0.3T",
+                "Aperto 0.4T",
+                "Airis Mate 0.2T",
+                "Oasis 1.2T",
+                "Echelon Smart 1.5T",
+                "Airis Soleil 0.25T",
+                "Airis Elite 0.3T",
+                "MRP 5000 0.2T",
+                "Echelon Oval 1.5T",
+                "Echelon 1.5T",
+                "Altaire 0.7T",
+                "Airis Vento O5",
+                "Airis Light 0.25T"
+            ]
+        },
+        {
+            "Bone Density": [
+                "DSC900-FX"
+            ]
+        },
+        {
+            "Ultrasound": [
+                "HI VISION Avius",
+                "ARIETTA V70",
+                "EUB-5500",
+                "HI VISION Preirus",
+                "EUB-6500",
+                "EUB 8500",
+                "EUB-7500",
+                "HI VISION Ascendus",
+                "Arietta 65",
+                "ARIETTA V60",
+                "EUB-405",
+                "EUB-6500 HV",
+                "ARIETTA 850",
+                "EUB 525",
+                "ARIETTA 50",
+                "FUTUS",
+                "ARIETTA S60",
+                "EUB-6000",
+                "ARIETTA Precision",
+                "EUB-555",
+                "EUB-5000",
+                "EUB-420",
+                "LS 2500"
+            ]
+        }
+    ],
+
+    "Easote": [
+        {
+            "MRI": [
+                "E-Scan",
+                "S-Scan",
+                "O-Scan"
+            ]
+        }
+    ],
+
+    "OniMSK": [
+        {
+            "MRI": [
+                "Oni MSK Extreme"
+            ]
+        }
+    ],
+
+    "Ziehm": [
+        {
+            "Fluroscopy": [
+                "Exposcop Vista",
+                "Quantum",
+                "Vision"
+            ]
+        }
+    ]
+
+}
