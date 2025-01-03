@@ -37,7 +37,7 @@ export const searchComponent = async() => {
     let counter = 0;
     const searchBoxs = document.querySelectorAll( '.search-box' );
     searchBoxs.forEach( box => {
-        ScrollReveal().reveal( box , scrollRevealBoxConfig( counter ) );
+        ScrollReveal().reveal( box , scrollRevealBoxConfig( counter, document.querySelector( '.items-container' ) ) );
         counter += 1;
         box.addEventListener( 'click', () => renderModalitys( box.querySelector( 'p' ).textContent ));
     });
@@ -76,7 +76,7 @@ const renderModalitys = ( brand ) => {
     let counter = 0;
     const searchBoxs = document.querySelectorAll( '.search-box' );
     searchBoxs.forEach( box => {
-        ScrollReveal().reveal( box , scrollRevealBoxConfig( counter ) );
+        ScrollReveal().reveal( box , scrollRevealBoxConfig( counter, document.querySelector( '.items-container' ) ) );
         counter += 1;
         box.addEventListener( 'click', () => renderSystemModels( brand, box.querySelector( 'p' ).textContent ));
     });
@@ -115,7 +115,7 @@ const renderSystemModels = ( brand, modality ) => {
     let counter = 0;
     const searchBoxs = document.querySelectorAll( '.search-box' );
     searchBoxs.forEach( box => {
-        ScrollReveal().reveal( box , scrollRevealBoxConfig( counter ) );
+        ScrollReveal().reveal( box , scrollRevealBoxConfig( counter, document.querySelector( '.items-container' ) ) );
         counter += 1;
         box.addEventListener( 'click', () => console.log( brand, modality, box.querySelector( 'p' ).textContent ));
     });
