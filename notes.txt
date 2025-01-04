@@ -1,0 +1,8 @@
+
+ROUTES
+
+get /engineers?data
+get /engineer/:id
+
+
+https://articulo.mercadolibre.com.mx/MLM-3334979258-hidrogel-bolas-orbeez-municiones-decoracion-500000pcs-_JM#polycard_client=recommendations_vip-v2p&reco_backend=ranker_retrieval_system_vpp_v2p&reco_model=ranker_entity_v2&reco_client=vip-v2p&reco_item_pos=2&reco_backend_type=low_level&reco_id=7cffd6b2-725c-41f9-a064-8e908d476c83

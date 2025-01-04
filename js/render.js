@@ -123,20 +123,33 @@ const resetActiveLinks = () => {
 };
 
 
+// resetWindowsVariables
+const resetWindowsVariables = () => {
+
+    window.cardContent = '';
+    window.open = '';
+    window.lastEngineer = '';
+
+};
+
+
 // setupForSearch
 const setupForSearch = () => {
 
+    resetWindowsVariables();
     resetActiveLinks();
     searchComponent();
     sidebarLinkSearch.classList.add( 'active' );
     closeFloatingSubmenu();
 
-}; setupForSearch();
+};
+setupForSearch();
 
 
 // setupForFavorites
 const setupForFavorites = () => {
 
+    resetWindowsVariables();
     favoritesComponent();
     resetActiveLinks();
     sidebarLinkFavorites.classList.add( 'active' );
@@ -148,6 +161,7 @@ const setupForFavorites = () => {
 // setupForWorkInProgress
 const setupForWorkInProgress = () => {
 
+    resetWindowsVariables();
     workInProgressComponent();
     resetActiveLinks();
     submenuWorkInProgress.classList.add( 'active' );
@@ -160,6 +174,7 @@ const setupForWorkInProgress = () => {
 // setupForScheduled
 const setupForScheduled = () => {
 
+    resetWindowsVariables();
     scheduledComponent();
     resetActiveLinks();
     submenuScheduled.classList.add( 'active' );
@@ -172,6 +187,7 @@ const setupForScheduled = () => {
 // setupPersonalInformation
 const setupPersonalInformation = () => {
 
+    resetWindowsVariables();
     personalInformationComponent();
     resetActiveLinks();
     submenuPersonalInformation.classList.add( 'active' );
@@ -184,6 +200,7 @@ const setupPersonalInformation = () => {
 // setupWorksHistory
 const setupWorksHistory = () => {
 
+    resetWindowsVariables();
     worksHistoryComponent();
     resetActiveLinks();
     submenuWorksHistory.classList.add( 'active' );
@@ -196,6 +213,7 @@ const setupWorksHistory = () => {
 // setupSettings
 const setupSettings = () => {
 
+    resetWindowsVariables();
     settingsComponent();
     resetActiveLinks();
     submenuSettings.classList.add( 'active' );
@@ -208,6 +226,7 @@ const setupSettings = () => {
 // setupMessages
 const setupMessages = () => {
 
+    resetWindowsVariables();
     messagesComponent();
     resetActiveLinks();
     submenuMessages.classList.add( 'active' );
@@ -220,6 +239,7 @@ const setupMessages = () => {
 // setupReferFriend
 const setupReferFriend = () => {
 
+    resetWindowsVariables();
     referFriendComponent();
     resetActiveLinks();
     submenuReferFriend.classList.add( 'active' )
@@ -232,6 +252,7 @@ const setupReferFriend = () => {
 // setupWallet
 const setupWallet = () => {
 
+    resetWindowsVariables();
     walletComponent();
     resetActiveLinks();
     submenuWallet.classList.add( 'active' );
@@ -244,6 +265,7 @@ const setupWallet = () => {
 // setupHelp
 const setupHelp = () => {
 
+    resetWindowsVariables();
     helpComponent();
     resetActiveLinks();
     submenuHelp.classList.add( 'active' );
