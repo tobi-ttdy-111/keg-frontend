@@ -563,10 +563,9 @@ body {
 .content {
     overflow: hidden;
     height: 100%;
-    width: 100%;
+    width: 35%;
     font-weight: 400;
     font-size: 14px;
-    /* background: azure; */
 }
 
 .mini-links {
@@ -580,7 +579,6 @@ body {
     text-decoration: underline;
     margin: 0 .4em;
 }
-
 
 .mini-links span:first-child {
     margin-left: 0;
@@ -605,6 +603,11 @@ body {
     justify-content: space-between;
     border-bottom: 1px solid #636B73;
     margin-bottom: .5em;
+    transition: margin .3s ease;
+}
+
+.search-box:hover {
+    margin-left: 1em;
 }
 
 
@@ -628,6 +631,22 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1em;
+}
+
+.user-box-main img {
+    width: 50px;
+    height: 50px;
+}
+
+.user-box-main h3 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: .3em;
+}
+
+.user-box-main p {
+    font-size: 12px;
+    font-weight: 200;
 }
 
 
@@ -671,7 +690,7 @@ body {
     height: 100%;
     transition: width .5s ease;
     margin-left: 0;
-    max-width: 450px;
+    max-width: 550px;
     width: 0;
     padding: 0;
     border: 0px solid #636B73;
@@ -794,6 +813,67 @@ body {
     background: linear-gradient(to bottom, #4E0301 1%, #923F08 99%);
 }
 
+@media (max-width: 1350px) {
+
+    .content {
+        width: 40%;
+    }
+
+    .card {
+        max-width: 500px;
+    }
+
+}
+
+@media (max-width: 1250px) {
+
+    .content {
+        width: 40%;
+    }
+
+    .card {
+        max-width: 450px;
+    }
+
+}
+
+@media (max-width: 1115px) {
+
+    .content {
+        width: 50%;
+    }
+
+    .card {
+        max-width: 350px;
+    }
+
+}
+
+
+@media (max-width: 1050px) {
+
+    .content {
+        width: 100%;
+    }
+
+    .content.card {
+        max-width: 0;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+
+    .content.card.open {
+        height: 100%;
+        transition: width .5s ease;
+        margin-left: 0;
+        max-width: 100%;
+        padding: 0;
+        border: 0px solid #636B73;
+    }
+
+}
+
 
 @media (max-width: 768px) {
 
@@ -812,5 +892,21 @@ body {
     ::-webkit-scrollbar {
         display: none;
     }
+
+    .content.card.open {
+        top: 70px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        padding: 30px;
+        height: calc( 100vh - 170px );
+    }
+
+    .card-buttoms div {
+        flex: 3;
+        font-size: 12px;
+    }
+
+
 
 }

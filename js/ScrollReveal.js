@@ -1,11 +1,25 @@
 
-// scrollRevealBoxConfig
-export const scrollRevealBoxConfig = ( counter, container ) => {
+// scrollRevealTitleConfig
+export const scrollRevealTitleConfig = () => {
 
     return {
-        container: container,
         delay: 0,
-        duration: 200 * counter,
+        duration: 600,
+        distance: '1.5em',
+        opacity: 0,
+        origin: 'bottom',
+        reset: true
+    }
+
+}
+
+
+// scrollRevealBackConfig
+export const scrollRevealBackConfig = () => {
+
+    return {
+        delay: 0,
+        duration: 600,
         distance: '3em',
         opacity: 0,
         origin: 'right',
@@ -14,17 +28,17 @@ export const scrollRevealBoxConfig = ( counter, container ) => {
 }
 
 
-// scrollRevealTitleConfig
-export const scrollRevealTitleConfig = () => {
+// scrollRevealBoxConfig
+export const scrollRevealBoxConfig = ( counter, container ) => {
 
     return {
-        delay: 0,
-        duration: 300,
-        distance: '30px',
+        container: container,
+        delay: 300,
+        duration: 300 * counter,
+        distance: '3em',
         opacity: 0,
-        origin: 'bottom',
-        reset: true
-    }
+        origin: 'right',
+    };
 
 }
 
@@ -34,8 +48,8 @@ export const scrollRevealCardInfo = ( counter ) => {
 
     return {
         delay: 450,
-        duration: 200 * counter,
-        distance: '30px',
+        duration: 300 * counter,
+        distance: '3em',
         opacity: 0,
         origin: 'right',
     };
@@ -49,7 +63,7 @@ export const scrollRevealCardMainConfig = () => {
     return {
         delay: 300,
         duration: 300,
-        distance: '30px',
+        distance: '3em',
         opacity: 0,
         origin: 'right',
         reset: true

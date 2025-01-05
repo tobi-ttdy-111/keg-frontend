@@ -2,9 +2,14 @@
 // engineerCard 
 export const engineerCard = ( user ) => { // FIXME: Desestructurar variables del ingeniero
 
+    let xIcon = false;
+    if ( document.querySelector( '.content-area' ).offsetWidth <= 790 ) {
+        xIcon = '<i class="bx bx-x-circle"></i>';
+    };
+
     return `
         <div class="card-options">
-            <i class='bx bx-x-circle'></i>
+            ${ xIcon || '<div></div>' }
             <div>
                 <i class='bx bxs-star'></i>
                 <p>4.5</p>
@@ -54,10 +59,20 @@ export const engineerCard = ( user ) => { // FIXME: Desestructurar variables del
 // engineerCardOptions
 export const engineerCardOptions = ( container, id = 123344 ) => {
 
-    document.querySelector( '.bx-x-circle' ).addEventListener( 'click', () => {
-        container.classList.remove( 'open' );
-        window.open = '';
-    });
+    const xIcon = document.querySelector( '.bx-x-circle' );
+    if ( xIcon ) {
+        xIcon.addEventListener( 'click', () => {
+            
+            const content = document.querySelector( '.content' );
+            content.style.width = '100%';
+            container.classList.remove( 'open' );
+            window.open = '';
+            window.cardContent = '';
+            window.lastEngineer = '';
+            renderEngineers( window.brand, window.modality, window.systemModel );
+
+        });
+    }
 
     document.querySelector( '#seeReviews' ).addEventListener( 'click', () => {
         console.log( 'Mostrar reviews del usuario ', id );
