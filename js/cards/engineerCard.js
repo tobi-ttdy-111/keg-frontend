@@ -1,4 +1,8 @@
 
+// imports
+import { reviewsCard, reviewsCardOptions } from './reviewsCard.js';
+
+
 // engineerCard 
 export const engineerCard = ( user ) => { // FIXME: Desestructurar variables del ingeniero
 
@@ -7,7 +11,8 @@ export const engineerCard = ( user ) => { // FIXME: Desestructurar variables del
         xIcon = '<i class="bx bx-x-circle"></i>';
     };
 
-    return `
+
+    window.cardContent = `
         <div class="card-options">
             ${ xIcon || '<div></div>' }
             <div>
@@ -48,10 +53,11 @@ export const engineerCard = ( user ) => { // FIXME: Desestructurar variables del
             </div>
         </div>
         <div class="card-buttoms">
-            <div class="card-favorites">Add to Favorites</div>
+            <div class="card-favorites remove">Remove to Favorites</div>
             <div class="card-message">New Message</div>
         </div>
     `
+    return window.cardContent;
 
 };
 
@@ -69,17 +75,27 @@ export const engineerCardOptions = ( container, id = 123344 ) => {
             window.open = '';
             window.cardContent = '';
             window.lastEngineer = '';
+            window.cardContent = '';
             renderEngineers( window.brand, window.modality, window.systemModel );
 
         });
     }
 
     document.querySelector( '#seeReviews' ).addEventListener( 'click', () => {
-        console.log( 'Mostrar reviews del usuario ', id );
+        const reviews = ''; // TODO: get engineer/:id/reviews
+        console.log( 'reviews de ', id );
+        reviewsCard( reviews );
+        reviewsCardOptions();
     })
 
-    document.querySelector( '.card-favorites' ).addEventListener( 'click', () => {
-        console.log( 'Añadir / Remover de favoritos al usuario ', id );
+    const cardFavorites = document.querySelector( '.card-favorites' )
+    cardFavorites.addEventListener( 'click', () => {
+        if ( cardFavorites.classList.contains( 'remove' ) ) {
+            console.log( 'Remover de favoritos al usuario ', id );
+        } else {
+            console.log( 'Añadir a favoritos al usuario ', id );
+        }
+        
     })
 
     document.querySelector( '.card-message' ).addEventListener( 'click', () => {

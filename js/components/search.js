@@ -253,13 +253,18 @@ const renderEngineers = ( brand, modality, systemModel ) => {
 // renderProfile
 const renderProfile = ( id ) => { // FIXME: Desestructurar datos del ingeniero
 
-    window.cardContent = engineerCard( id ); // FIXME: Mandar datos del ingeniero
-    const container = document.querySelector( '.user-card' );
-    console.log( container );
+    if ( !window.cardContent ) { 
+        window.cardContent = engineerCard( id ); // FIXME: Mandar datos del ingeniero
+    }
+
+    const container = document.querySelector( '.card' );
+    container.classList.add( 'user-card' );
+    container.classList.remove( 'review-card' );
     container.classList.add( 'open' );
+
     window.open = 'open';
     container.innerHTML = window.cardContent;
-    engineerCardOptions( container );
+    engineerCardOptions( container, id );
 
     const contentArea = document.querySelector( '.content-area' );
     if ( contentArea.offsetWidth <= 790 ) {
@@ -276,4 +281,4 @@ const renderProfile = ( id ) => { // FIXME: Desestructurar datos del ingeniero
     ScrollReveal().reveal( document.querySelector( '.card-info-second' ), scrollRevealCardInfo( counter ) ); counter += 1;
     ScrollReveal().reveal( document.querySelector( '.card-buttoms' ), scrollRevealCardInfo( counter) ); counter += 1;
 
-};
+}; window.renderProfile = renderProfile;
