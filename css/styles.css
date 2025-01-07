@@ -623,8 +623,12 @@ body {
     justify-content: space-between;
     border-bottom: 1px solid #636B73;
     margin-bottom: .5em;
+    transition: margin .3s ease;
 }
 
+.user-box:hover {
+    margin-left: 1em;
+}
 
 .user-box-main {
     display: flex;
@@ -681,6 +685,15 @@ body {
 
 .user-box .available {
     color: #00ff00;
+}
+
+.user-chat-ago {
+    height: 45px;
+    width: 8em;
+    display: flex;
+    align-items: flex-start;
+    font-size: 10px;
+    justify-content: end;
 }
 
 
@@ -887,6 +900,132 @@ body {
     height: calc( 100% - 2.3em );
     overflow: auto;
 }
+
+
+/* CARD CHAT */
+
+.card.card.open {
+    padding: 20px;
+}
+
+.card-chat-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    gap: .5em;
+}
+
+.card-chat-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3em;
+}
+
+.card-chat-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8em;
+}
+
+.card-chat-buttons div {
+    background: linear-gradient(to bottom, #020837 1%, #6093B1 99%);
+    padding: .5em 1.5em;
+    border-radius: 1em;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.card-chat-buttons .negativeBtn {
+    background: linear-gradient(to bottom, #4E0301 1%, #923F08 99%);
+    
+}
+
+.card-data-entry {
+    padding-top: 15px;
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.file-upload-wrapper {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.file-upload-wrapper input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-upload-wrapper label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 27px;
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.file-upload-wrapper label i {
+    vertical-align: middle;
+}
+
+.data-entry-chatbox {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-left: .5em;
+}
+
+.data-entry-chatbox textarea {
+    flex-grow: 1;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 5px 15px;
+    font-size: 12px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 27px;
+    font-family: "Inter", serif;
+    transition: height 0.2s ease;
+}
+
+.data-entry-chatbox i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
 
 @media (max-width: 1350px) {
 

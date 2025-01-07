@@ -143,7 +143,7 @@ const setupForSearch = () => {
     closeFloatingSubmenu();
 
 };
-setupForSearch();
+// setupForSearch();
 
 
 // setupForFavorites

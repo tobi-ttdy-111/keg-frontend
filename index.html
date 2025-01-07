@@ -103,11 +103,75 @@
 
             <div class="content-area">
                 <!-- APP -->
+                <h1>Work in progress</h1>
+                <div class="main-container">
+                    <div class="content">
+                        <div class="items-container">
+                            <!-- ENGINEER -->
+                            <div class="user-box" id="0123456789">
+                                <div class="user-box-main">
+                                    <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+                                    <div>
+                                        <h3>User name</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique dicta obcaecati excepturi commodi.</p>
+                                    </div>
+                                </div>
+                                <div class="user-chat-ago">
+                                    <p>2d ago</p>
+                                </div>
+                            </div>
+                            <!-- ENGINEER -->
+                        </div>
+                    </div>
+                    <div class="content card user-card open">
+                        <!-- CARD -->
+                        <div class="card-chat-header">
+                            <div class="card-chat-info">
+                                <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+                                <h3>Engineer name</h3>
+                            </div>
+                            <div class="card-chat-buttons">
+                                <div class="card-chat-button">Add/Schedule Time</div>
+                                <div class="card-chat-button negativeBtn">Add/Schedule Time</div>
+                            </div>
+                            <p>Time remainging: 234 hrs</p>
+                        </div>
+
+                        <div class="card-data-entry">
+                            <div class="file-upload-wrapper">
+                                <input type="file" id="fileInput">
+                                <label for="fileInput">
+                                    <i class='bx bx-image-alt'></i>
+                                </label>
+                            </div>                           
+                            <div class="data-entry-chatbox">
+                                <textarea placeholder="Type your message..."></textarea>
+                                <i class='bx bxs-send'></i>
+                            </div>
+                        </div>
+                        
+                        <!-- CARD -->
+                    </div>
+                </div>
+                <!-- APP -->
             </div>
 
         </main>
 
     </div>
+
+    <script>
+        const textarea = document.querySelector('.data-entry-chatbox textarea');
+        textarea.addEventListener('input', () => {
+            textarea.style.height = '27px'; // Restablece la altura para recalcular
+            textarea.style.height = `${textarea.scrollHeight }px`; // Ajusta según el contenido
+        });
+        document.querySelector( '.bxs-send' ).addEventListener( 'click', () => {
+            textarea.style.height = '27px';
+            textarea.value = '';
+        });
+        // Evento delete y enter
+    </script>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="module" src="./js/sidebar.js"></script>
