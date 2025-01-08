@@ -8,3 +8,104 @@ get /engineer/:id/reviews
 get /user/favorites
 
 https://articulo.mercadolibre.com.mx/MLM-3334979258-hidrogel-bolas-orbeez-municiones-decoracion-500000pcs-_JM#polycard_client=recommendations_vip-v2p&reco_backend=ranker_retrieval_system_vpp_v2p&reco_model=ranker_entity_v2&reco_client=vip-v2p&reco_item_pos=2&reco_backend_type=low_level&reco_id=7cffd6b2-725c-41f9-a064-8e908d476c83
+
+
+
+ROUTES
+
+get /engineers?data
+get /engineer/:id
+get /engineer/:id/reviews
+
+get /user/favorites
+
+https://articulo.mercadolibre.com.mx/MLM-3334979258-hidrogel-bolas-orbeez-municiones-decoracion-500000pcs-_JM#polycard_client=recommendations_vip-v2p&reco_backend=ranker_retrieval_system_vpp_v2p&reco_model=ranker_entity_v2&reco_client=vip-v2p&reco_item_pos=2&reco_backend_type=low_level&reco_id=7cffd6b2-725c-41f9-a064-8e908d476c83
+
+
+
+// TODO: MENU CARD > ADD / SCHEDULED WORK
+<div class="normal-container">
+    <p>What do you want to do?</p>
+    <div class="menu-card-option">Add Time</div>
+    <div class="menu-card-option">Schedule Time</div>
+</div>
+<div class="menu-card-cancel">Cancel</div>
+
+
+// TODO: MENU CARD > PAY 
+<div class="menu-back-container">
+    <div class="menu-card-back"><i class='bx bx-arrow-back'></i></div>
+    <div class="menu-card-selects">
+        <div class="menu-select">
+            <label for="hoursAmmount" class="label">Please choose the amount of hours:</label>
+            <select id="hoursAmmount" class="custom-select">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <i class='bx bx-down-arrow-alt flecha number'></i> <!-- Icono de flecha hacia abajo -->
+        </div>
+        
+        <div class="menu-select">
+            <label for="paymentMethod" class="label">Select payment method:</label>
+            <select id="paymentMethod" class="custom-select">
+                <option value="1" selected>Mastercard 1234234235243123q2312342</option>
+                <option value="2">Amex 123423421234234</option>
+            </select>
+            <i class='bx bx-down-arrow-alt flecha'></i> <!-- Icono de flecha hacia abajo -->
+        </div>                                    
+    </div>
+    <div class="menu-button">Pay</div> 
+</div> 
+
+
+// TODO: JS MENU CARD > PAY
+function setupSelect(selectId) {
+    const select = document.getElementById(selectId);
+    const flecha = select.nextElementSibling; // Seleccionamos el icono de la flecha al lado del select
+
+    // Función para cambiar la dirección de la flecha
+    function toggleArrow(isOpen) {
+        if (isOpen) {
+            flecha.style.transform = "rotate(180deg)"; // Flecha hacia arriba (menú abierto)
+        } else {
+            flecha.style.transform = "rotate(0deg)"; // Flecha hacia abajo (menú cerrado)
+        }
+    }
+
+    // Detectar cuando el select gana foco (menú desplegado)
+    select.addEventListener("focus", function() {
+        toggleArrow(true); // Cambia la dirección de la flecha hacia arriba
+    });
+
+    // Detectar cuando el select pierde foco (menú cerrado)
+    select.addEventListener("blur", function() {
+        toggleArrow(false); // Cambia la dirección de la flecha hacia abajo
+    });
+
+    // Detectar cuando se selecciona una opción
+    select.addEventListener("change", function() {
+        toggleArrow(false); // Cambia la dirección de la flecha hacia abajo
+    });
+}
+
+// Inicializar la funcionalidad para los selects
+setupSelect("hoursAmmount");
+setupSelect("paymentMethod");
+
+
+// TODO: 
+<div class="normal-container">
+    <p class="border-bottom">Do you want to finalize the current work?</p>
+    <div class="menu-card-option">Yes</div>
+</div>
+<div class="menu-card-cancel">Cancel</div>
+
+
