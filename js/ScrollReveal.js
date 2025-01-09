@@ -42,6 +42,20 @@ export const scrollRevealBoxConfig = ( counter, container ) => {
 
 }
 
+// scrollRevealChatConfig
+export const scrollRevealChatConfig = ( counter, container, origin ) => {
+
+    return {
+        container: container,
+        delay: 0,
+        duration: 150 * counter,
+        distance: '1em',
+        opacity: 0,
+        origin,
+    };
+
+}
+
 
 // scrollRevealCardInfo
 export const scrollRevealCardInfo = ( counter ) => {
@@ -66,6 +80,21 @@ export const scrollRevealCardMainConfig = () => {
         distance: '3em',
         opacity: 0,
         origin: 'right',
+        reset: true
+    }
+
+}
+
+
+// scrollRevealCardMenuConfig
+export const scrollRevealCardMenuConfig = ( origin = 'right' ) => {
+
+    return {
+        delay: 0,
+        duration: 300,
+        distance: '3em',
+        opacity: 0,
+        origin: origin,
         reset: true
     }
 

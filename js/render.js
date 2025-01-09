@@ -129,6 +129,7 @@ const resetWindowsVariables = () => {
     window.cardContent = '';
     window.open = '';
     window.lastEngineer = '';
+    window.existCardMenuContainer = false;
 
 };
 
@@ -143,7 +144,7 @@ const setupForSearch = () => {
     closeFloatingSubmenu();
 
 };
-// setupForSearch();
+setupForSearch();
 
 
 // setupForFavorites

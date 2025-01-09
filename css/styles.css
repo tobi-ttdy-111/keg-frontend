@@ -1009,17 +1009,15 @@ body {
 }
 
 .data-entry-chatbox textarea {
+    padding: 0px 15px;
+    box-sizing: border-box;
     position: absolute;
     flex-grow: 1;
     width: 100%;
     border: none;
     outline: none;
-    resize: none;
-    padding: 5px 15px;
     font-size: 12px;
     border-radius: 5px;
-    overflow: hidden;
-    height: 27px;
     font-family: "Inter", serif;
     transition: height 0.2s ease;
 }
@@ -1059,8 +1057,10 @@ body {
     padding: .5em .8em;
     background: #6093B160;
     align-self: flex-end;
-    margin-right: .5em;
+    margin-right: 1em;
     border-radius: 8px 0 8px 8px;
+    opacity: 1; /* ScrollReveal ajustará esto */
+    transform: none; /* ScrollReveal lo cambiará al iniciar la animación */
 }
 
 .chat-element.outro {
@@ -1073,7 +1073,8 @@ body {
 /* MENU CARD */
 .menu-card {
     position: absolute;
-    top: 0;
+    z-index: 100;
+    top: -100%;
     left: 0;
     width: 100%;
     height: 100%;
@@ -1082,6 +1083,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: top 0.45s ease;
+}
+
+.menu-card.openCard {
+    top: 0;
 }
 
 .normal-container {
@@ -1101,10 +1107,13 @@ body {
     padding: 0 2em;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin: 1em 0 .5em 0;
     position: relative;
+}
+
+.normal-container p.center {
+    justify-content: center;
 }
 
 .normal-container .border-bottom {
@@ -1370,6 +1379,115 @@ input[type="range"]:hover {
     transition: height 0.2s ease;
 }
 
+.menu-card-calendar {
+    height: auto;
+    width: 100%;
+}
+
+.compact {
+    font-size: 10px;
+    gap: 1em;
+}
+
+
+.menu-card-calendar {
+    width: 100%;
+    height: auto;
+}
+
+.calendar {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 2em 1.5em;
+    border-radius: 10px;
+    font-family: "Inter", serif;
+    font-size: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.month-year {
+    font-size: 1.2em;
+}
+
+.nav-buttons button {
+    background: transparent;
+    border: none;
+    color: #3b82f6;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 8px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+}
+
+.days div {
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.days div:hover:not(.disabled) {
+    background-color: #3b82f6;
+}
+
+.days .selected {
+    background-color: #3b82f6;
+}
+
+.days .disabled {
+    color: #666;
+    cursor: not-allowed;
+}
+
+.time-picker {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+#time-input {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: .3em 0 .3em 1em;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.card-chat-container {
+    overflow-x: hidden;
+}
+
+.small-card-options {
+    margin-bottom: 0;
+    position: absolute;
+}
+
 
 @media (max-width: 1350px) {
 
@@ -1399,6 +1517,10 @@ input[type="range"]:hover {
         max-width: 450px;
     }
 
+    .calendar-container {
+        width: 60%;
+    }
+
 }
 
 @media (max-width: 1115px) {
@@ -1415,6 +1537,10 @@ input[type="range"]:hover {
     .menu-card-cancel,
     .menu-back-container {
         width: 60%;
+    }
+
+    .calendar-container {
+        width: 70%;
     }
 
 }
@@ -1446,6 +1572,10 @@ input[type="range"]:hover {
     .menu-card-cancel,
     .menu-back-container {
         width: 80%;
+    }
+
+    .calendar-container {
+        width: 90%;
     }
 
 }
@@ -1488,4 +1618,18 @@ input[type="range"]:hover {
         width: 60%;
     }
 
+    .calendar-container {
+        width: 60%;
+    }
+
 }
+
+@media (max-width: 380px) {
+
+    .calendar-container {
+        width: 70%;
+    }
+
+}
+
+
