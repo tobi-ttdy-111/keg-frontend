@@ -130,6 +130,8 @@ const resetWindowsVariables = () => {
     window.open = '';
     window.lastEngineer = '';
     window.existCardMenuContainer = false;
+    window.lastWorkH = '';
+    window.workHistContent = '';
 
 };
 

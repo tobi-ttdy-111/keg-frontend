@@ -1186,8 +1186,13 @@ body {
     font-size: 16px;
 }
 
-.menu-card-back .bx-arrow-back {
+.menu-card-back .bx-arrow-back,
+.menu-card-back .bx-x-circle {
     cursor: pointer;
+}
+
+.menu-card-back .bx-x-circle {
+    font-size: 20px;
 }
 
 .menu-card-selects {
@@ -1260,6 +1265,36 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.menu-card-container-basic {
+    width: 100%;
+    background: #636B73;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 1.4em;
+    margin-top: .6em;
+}
+
+.menu-card-container-basic p {
+    margin-bottom: .3em;
+}
+
+.menu-card-container-basic input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #474b50;
+    color: white;
+    background: transparent;
+    outline: none;
+    padding: .3em 0;
+    font-family: "Inter", serif;
+    font-size: 12px;
+}
+
+
+.menu-card-container-basic .menu-back-address {
+    height: 2em;
 }
 
 .noCursor div::before {
@@ -1488,6 +1523,171 @@ input[type="range"]:hover {
     position: absolute;
 }
 
+.blackP {
+    color: #000;
+    font-weight: 400 !important;
+}
+
+.noMarginLeft {
+    margin-left: 0 !important;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3em !important;
+}
+
+.noMarginLeft img {
+    width: 7em;
+    height: 7em;
+}
+
+.user-profile-data-info {
+    display: flex;
+    width: 100%;
+    padding: .7em 0;
+    border-bottom: 1px solid #474b50;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: margin-left .3s ease;
+    font-size: 14px;
+}
+
+
+.user-profile-data-info p {
+    width: 30%;
+}
+
+.user-profile-data-info i {
+    width: 10%;
+}
+
+.user-profile-data-info span {
+    width: 100%;
+}
+
+.user-profile-data-info:hover {
+    margin-left: 2em;
+}
+
+.noHoverEfect:hover {
+    margin-left: 0em;
+}
+
+.user-card-img-change {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 1em;
+    margin-bottom: 1em;   
+}
+
+.user-card-img-change p {
+    cursor: pointer;
+}
+
+.custom-file-input {
+    margin-top: .3em;
+    width: 100%;
+    height: 2em;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: .4em;
+}
+
+.custom-file-input::before {
+    border-radius: .4em;
+    font-size: 12px;
+    font-family: "Inter", serif;
+    content: 'Upload file';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #020837;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.work-card {
+    font-size: 12px;
+    
+}
+
+.work-card-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    border-bottom: 1px solid #474b50;
+    gap: 1.5em;
+}
+
+.work-card-breakdow {
+    padding: 4em 4em .4em 4em;
+    border-bottom: 1px solid #474b50;
+}
+
+.work-card-breakdow h3 {
+    margin-bottom: 1em;
+} 
+
+.card-breakdown-prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prices-toRight {
+    text-align: right;
+}
+
+.work-card-options {
+    margin-top: .4em;
+    padding: 0 4em;
+}
+
+.work-total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-options {
+    margin-top: 2.5em;
+}
+
+.option-item-work {
+    display: flex;
+    gap: .5em;
+    transition: right .3s ease;
+    margin-bottom: 1em;
+}
+
+.option-item-work div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    border-bottom: 1px solid #474b50;
+}
+
+.option-item-work div .bx-chevron-right {
+    font-size: 18px;
+}
+
+
+
 
 @media (max-width: 1350px) {
 
@@ -1620,6 +1820,10 @@ input[type="range"]:hover {
 
     .calendar-container {
         width: 60%;
+    }
+
+    .noMarginLeft {
+        margin-top: 5em !important;
     }
 
 }

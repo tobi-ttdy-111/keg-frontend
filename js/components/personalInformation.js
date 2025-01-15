@@ -1,13 +1,11 @@
 
 // imports
-import { contentArea } from '../render.js';
+import { personalInfFractal } from '../fractals/personalInfFractal.js';
 
 
 // personalInformationComponent
 export const personalInformationComponent = () => {
-
-    contentArea.innerHTML = `
-        <h1>personalInformation component</h1>
-    `;
+    
+    personalInfFractal();
 
 };
