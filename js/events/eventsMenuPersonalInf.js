@@ -20,7 +20,7 @@ const listenersMenuPersonalInf = ( user, campIndex ) => {
 
     const saveBtn = document.getElementById( 'saveBtn' );
     saveBtn.addEventListener( 'click', () => {
-        
+        document.querySelector( '.menu-card' ).classList.remove( 'openCard' );
         console.log( chargePeticions( campIndex ), ' del usuario ', user.id )
     });
 
