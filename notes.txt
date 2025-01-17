@@ -23,373 +23,51 @@ https://articulo.mercadolibre.com.mx/MLM-3334979258-hidrogel-bolas-orbeez-munici
 
 
 
-// TODO: MENU CARD > ADD / SCHEDULED WORK
-<div class="normal-container">
-    <p class="center">What do you want to do?</p>
-    <div class="menu-card-option">Add Time</div>
-    <div class="menu-card-option">Schedule Time</div>
-</div>
-<div class="menu-card-cancel">Cancel</div>
 
-
-// TODO: MENU CARD > PAY 
-<div class="menu-back-container">
-    <div class="menu-card-back"><i class='bx bx-arrow-back'></i></div>
-    <div class="menu-card-selects">
-        <div class="menu-select">
-            <label for="hoursAmmount" class="label">Please choose the amount of hours:</label>
-            <select id="hoursAmmount" class="custom-select">
-                <option value="1" selected>1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select>
-            <i class='bx bx-down-arrow-alt flecha number'></i> <!-- Icono de flecha hacia abajo -->
-        </div>
-        
-        <div class="menu-select">
-            <label for="paymentMethod" class="label">Select payment method:</label>
-            <select id="paymentMethod" class="custom-select">
-                <option value="1" selected>Mastercard 1234234235243123q2312342</option>
-                <option value="2">Amex 123423421234234</option>
-            </select>
-            <i class='bx bx-down-arrow-alt flecha'></i> <!-- Icono de flecha hacia abajo -->
-        </div>                                    
-    </div>
-    <div class="menu-button">Pay</div> 
-</div> 
-
-
-// TODO: JS MENU CARD > PAY
-function setupSelect(selectId) {
-    const select = document.getElementById(selectId);
-    const flecha = select.nextElementSibling; // Seleccionamos el icono de la flecha al lado del select
-
-    // Función para cambiar la dirección de la flecha
-    function toggleArrow(isOpen) {
-        if (isOpen) {
-            flecha.style.transform = "rotate(180deg)"; // Flecha hacia arriba (menú abierto)
-        } else {
-            flecha.style.transform = "rotate(0deg)"; // Flecha hacia abajo (menú cerrado)
-        }
-    }
-
-    // Detectar cuando el select gana foco (menú desplegado)
-    select.addEventListener("focus", function() {
-        toggleArrow(true); // Cambia la dirección de la flecha hacia arriba
-    });
-
-    // Detectar cuando el select pierde foco (menú cerrado)
-    select.addEventListener("blur", function() {
-        toggleArrow(false); // Cambia la dirección de la flecha hacia abajo
-    });
-
-    // Detectar cuando se selecciona una opción
-    select.addEventListener("change", function() {
-        toggleArrow(false); // Cambia la dirección de la flecha hacia abajo
-    });
-}
-setupSelect("hoursAmmount");
-setupSelect("paymentMethod");
-
-
-// TODO: MENU CARD > FINALIZE WORK
-<div class="normal-container">
-    <p class="border-bottom center">Do you want to finalize the current work?</p>
-    <div class="menu-card-option">Yes</div>
-</div>
-<div class="menu-card-cancel">Cancel</div>
-
-
-// TODO: MENU CARD > REVIEW
-<div class="normal-container noCursor review-container-menu">
-    <p class="border-bottom center">Please rate your experience</p>
-    <div class="menu-card-review">
-        <div class="review-note">
-            <h3 id="valueRange">5.0</h3>
-            <i class='bx bxs-star'></i>
-        </div>
-        <div class="menu-range">
-            <img src="./img/face3.svg" alt="User Avatar" id="userAvatar">
-            <input class="range50" type="range" id="rangeSlider" min="0" max="100" step="25" value="50">
-        </div>
-        <div class="menu-textarea">
-            <p>Comments: (optional)</p>
-            <textarea name="review-comments" id="reviewComments"></textarea>
-        </div>
-    </div>
-</div>
-<div class="menu-button">Submit</div> 
-
-
-// TODO: MENU CARD > REVIEW JS
-
-const rangeSlider = document.getElementById('rangeSlider');
-const valueRange = document.querySelector( '#valueRange' );
-const userAvatar = document.getElementById('userAvatar');
-const setClassList = ( value ) => {
-    rangeSlider.classList.remove( ...rangeSlider.classList );
-    rangeSlider.classList.add( `range${ value }` )
-};
-
-const colors = ['#FF5D5D', '#BE5DFF', '#5DB6FF', '#83FF5D', '#FFD05D'];
-const updateSlider = () => {
-    const value = rangeSlider.value;
-    const index = Math.floor( value / 25 );  
-    console.log( value, index );
-    rangeSlider.style.background = `linear-gradient(to right, ${colors[index]} 0%, ${colors[index]} ${value}%, #474b50 ${value}%, #474b50 100%)`;
-    userAvatar.src = `./img/face${index + 1}.svg`;
-    setClassList( value );
-    valueRange.innerHTML = `${ ( value / 25 ) + 1 }.0`;
-}; updateSlider();
-rangeSlider.addEventListener( 'input', updateSlider );
-
-
-// TODO: MENU CARD > CALENDAR
-<div class="menu-back-container calendar-container">
-    <div class="menu-card-back"><i class='bx bx-arrow-back'></i></div>
-    <div class="menu-card-selects compact">
-        <div class="menu-card-calendar">
-            <div class="calendar">
-                <div class="calendar-header">
-                    <span class="month-year"></span>
-                    <div class="nav-buttons">
-                        <button class="prev-month">&lt;</button>
-                        <button class="next-month">&gt;</button>
-                    </div>
+// FORM LOGIN
+<div class="form-content">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+            </div>
+            <div class="form-render-container">
+                <div class="input-container">
+                    <svg class="phone-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                    <input type="tel" class="phone-input" placeholder="Phone Number" id="phoneNumber">
                 </div>
-                <div class="weekdays">
-                    <div>SUN</div>
-                    <div>MON</div>
-                    <div>TUE</div>
-                    <div>WED</div>
-                    <div>THU</div>
-                    <div>FRI</div>
-                    <div>SAT</div>
-                </div>
-                <div class="days"></div>
-                <div class="time-picker">
-                    <span>Time</span>
-                    <input type="time" id="time-input" value="12:00" required>
-                </div>
+                <button class="login-button" id="login">Login / Sign Up</button>
+                <p class="terms-text">
+                    By typing Login / Sign UP, you agree to our Terms.
+                    Learn how we process your data in our Privacy and Policy Cookie Policy.
+                </p>
             </div>
         </div>
-        <div class="menu-select">
-            <label for="hoursAmmount" class="label">Please choose the amount of hours:</label>
-            <select id="hoursAmmount" class="custom-select">
-                <option value="1" selected>1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select>
-            <i class='bx bx-down-arrow-alt flecha number'></i> <!-- Icono de flecha hacia abajo -->
+
+
+
+
+// OTP FORM
+        <div class="form-content">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+            </div>
+            <div class="form-render-container">
+                <div class="form-content">
+                    <i class='bx bx-arrow-back'></i>
+                    <div class="form-otp-title">
+                        <h2 class="otp-title">Enter OTP</h2>
+                        <p>An 6 digit code has been sent to your Phone Number</p>
+                    </div>
+                    <div class="otp-inputs">
+                        <input type="text" maxlength="1" class="otp-input">
+                        <input type="text" maxlength="1" class="otp-input">
+                        <input type="text" maxlength="1" class="otp-input">
+                        <input type="text" maxlength="1" class="otp-input">
+                        <input type="text" maxlength="1" class="otp-input">
+                        <input type="text" maxlength="1" class="otp-input">
+                    </div>
+                </div>
+                <button class="login-button verify-btn">Verify</button>
+            </div>
         </div>
-        <div class="menu-select">
-            <label for="paymentMethod" class="label">Select payment method:</label>
-            <select id="paymentMethod" class="custom-select">
-                <option value="1" selected>Mastercard 1234234235243123q2312342</option>
-                <option value="2">Amex 123423421234234</option>
-            </select>
-            <i class='bx bx-down-arrow-alt flecha'></i> <!-- Icono de flecha hacia abajo -->
-        </div>                                    
-    </div>
-    <div class="menu-button">Save to Calendar</div> 
-</div> 
-
-
-// TODO: CALENDAR .JS
-class Calendar {
-    constructor(container) {
-        this.container = container;
-        this.date = new Date();
-        this.selectedDate = null;
-        this.selectedTime = null;
-        
-        this.monthYearElement = container.querySelector('.month-year');
-        this.daysContainer = container.querySelector('.days');
-        this.timeInput = container.querySelector('#time-input');
-        
-        this.setupEventListeners();
-        this.renderizeCalendar();
-    }
-
-    setupEventListeners() {
-        this.container.querySelector('.prev-month').addEventListener('click', () => {
-            this.date.setMonth(this.date.getMonth() - 1);
-            this.renderizeCalendar();
-        });
-
-        this.container.querySelector('.next-month').addEventListener('click', () => {
-            this.date.setMonth(this.date.getMonth() + 1);
-            this.renderizeCalendar();
-        });
-
-        this.timeInput.addEventListener('change', (e) => {
-            this.selectedTime = e.target.value;
-        });
-    }
-
-    renderizeCalendar() {
-        const year = this.date.getFullYear();
-        const month = this.date.getMonth();
-
-        // Update month and year display
-        const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
-                       'August', 'September', 'October', 'November', 'December'];
-        this.monthYearElement.textContent = `${months[month]} ${year}`;
-
-        // Clear previous days
-        this.daysContainer.innerHTML = '';
-
-        // Get first day of month and total days
-        const firstDay = new Date(year, month, 1).getDay();
-        const daysInMonth = new Date(year, month + 1, 0).getDate();
-
-        // Add empty spaces for days before first day of month
-        for (let i = 0; i < firstDay; i++) {
-            const dayElement = document.createElement('div');
-            this.daysContainer.appendChild(dayElement);
-        }
-
-        // Add days of month
-        const today = new Date();
-        for (let day = 1; day <= daysInMonth; day++) {
-            const dayElement = document.createElement('div');
-            dayElement.textContent = day;
-
-            const currentDate = new Date(year, month, day);
-            
-            // Disable past dates
-            if (currentDate < new Date(today.getFullYear(), today.getMonth(), today.getDate())) {
-                dayElement.classList.add('disabled');
-            } else {
-                dayElement.addEventListener('click', () => this.selectDate(currentDate, dayElement));
-            }
-
-            if (this.selectedDate && 
-                currentDate.getDate() === this.selectedDate.getDate() &&
-                currentDate.getMonth() === this.selectedDate.getMonth() &&
-                currentDate.getFullYear() === this.selectedDate.getFullYear()) {
-                dayElement.classList.add('selected');
-            }
-
-            this.daysContainer.appendChild(dayElement);
-        }
-    }
-
-    selectDate(date, element) {
-        this.container.querySelectorAll('.days div').forEach(div => {
-            div.classList.remove('selected');
-        });
-        element.classList.add('selected');
-        this.selectedDate = date;
-    }
-
-    getSelectedDateTime() {
-        if (!this.selectedDate || !this.selectedTime) {
-            return null;
-        }
-
-        const dateTime = new Date(this.selectedDate);
-        const [hours, minutes] = this.selectedTime.split(':');
-        dateTime.setHours(parseInt(hours), parseInt(minutes));
-
-        return {
-            date: dateTime,
-            formattedDate: dateTime.toLocaleDateString(),
-            formattedTime: this.selectedTime,
-            year: dateTime.getFullYear(),
-            month: dateTime.getMonth() + 1,
-            day: dateTime.getDate(),
-            hours: parseInt(hours),
-            minutes: parseInt(minutes)
-        };
-    }
-}
-
-// Initialize calendar
-document.addEventListener('DOMContentLoaded', () => {
-    const calendarContainer = document.querySelector('.menu-card-calendar');
-    const calendar = new Calendar(calendarContainer);
-
-    // Example of how to get the selected date and time
-    window.getCalendarData = () => {
-        return calendar.getSelectedDateTime();
-    };
-});
-
-
-TODO: <!-- CARD -->
-<div class="card-chat-header">
-    <div class="card-chat-info">
-        <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
-        <h3>Engineer name</h3>
-    </div>
-    <div class="card-chat-buttons">
-        <div class="card-chat-button">Add/Schedule Time</div>
-        <div class="card-chat-button negativeBtn">Add/Schedule Time</div>
-    </div>
-    <p>Time remainging: 234 hrs</p>
-</div>
-
-<div class="card-chat-container">
-    <div class="chat-element">
-        Chat212
-    </div>
-    <div class="chat-element outro">
-        asdfasdf
-    </div>
-    <div class="chat-element">
-        asdfasdf
-    </div>
-    <div class="chat-element">
-        aqua
-    </div>
-</div>
-
-<div class="card-data-entry">
-    <div class="file-upload-wrapper">
-        <input type="file" id="fileInput">
-        <label for="fileInput">
-            <i class='bx bx-image-alt'></i>
-        </label>
-    </div>                           
-    <div class="data-entry-chatbox">
-        <textarea placeholder="Type your message..."></textarea>
-    </div>
-    <i class='bx bxs-send'></i>
-</div>
-
-
-// TODO: CARD JS
-const textarea = document.querySelector('.data-entry-chatbox textarea');
-textarea.addEventListener('input', () => {
-    textarea.style.height = '27px'; // Restablece la altura para recalcular
-    textarea.style.height = `${textarea.scrollHeight }px`; // Ajusta según el contenido
-});
-document.querySelector( '.bxs-send' ).addEventListener( 'click', () => {
-    textarea.style.height = '27px';
-    textarea.value = '';
-});
-// Evento delete y enter
-
-
-// TODO: menu card
-<div class="menu-card">  
-</div>
-
-
-// FIXME: UN ROLON
-https://www.youtube.com/watch?v=JYpl8uLWW18
